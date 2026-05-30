@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liquid Glass Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- KaTeX CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css">
+    <!-- KaTeX JS -->
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"></script>
+    <!-- Math.js for calculations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.11.0/math.min.js"></script>
+</head>
+<body>
+    <div class="calculator-container">
+        <div class="calculator">
+            <div class="display-section">
+                <div class="input-display" id="inputDisplay">0</div>
+                <div class="formula-display" id="formulaDisplay"></div>
+            </div>
+
+            <div class="buttons-grid">
+                <!-- Row 1: Functions -->
+                <button class="btn func-btn" data-func="sin">sin</button>
+                <button class="btn func-btn" data-func="cos">cos</button>
+                <button class="btn func-btn" data-func="tan">tan</button>
+                <button class="btn func-btn" data-func="sqrt">√</button>
+
+                <!-- Row 2: Advanced Functions -->
+                <button class="btn func-btn" data-func="log">log</button>
+                <button class="btn func-btn" data-func="ln">ln</button>
+                <button class="btn func-btn" data-func="derivative">d/dx</button>
+                <button class="btn func-btn" data-func="sum">Σ</button>
+
+                <!-- Row 3: More Functions -->
+                <button class="btn func-btn" data-func="abs">|x|</button>
+                <button class="btn func-btn" data-func="factorial">x!</button>
+                <button class="btn func-btn" data-func="power">x^y</button>
+                <button class="btn operator-btn" data-op="/">÷</button>
+
+                <!-- Row 4: Numbers and operations -->
+                <button class="btn number-btn" data-num="7">7</button>
+                <button class="btn number-btn" data-num="8">8</button>
+                <button class="btn number-btn" data-num="9">9</button>
+                <button class="btn operator-btn" data-op="*">×</button>
+
+                <!-- Row 5 -->
+                <button class="btn number-btn" data-num="4">4</button>
+                <button class="btn number-btn" data-num="5">5</button>
+                <button class="btn number-btn" data-num="6">6</button>
+                <button class="btn operator-btn" data-op="-">−</button>
+
+                <!-- Row 6 -->
+                <button class="btn number-btn" data-num="1">1</button>
+                <button class="btn number-btn" data-num="2">2</button>
+                <button class="btn number-btn" data-num="3">3</button>
+                <button class="btn operator-btn" data-op="+">+</button>
+
+                <!-- Row 7 -->
+                <button class="btn number-btn" data-num="0">0</button>
+                <button class="btn number-btn" data-num=".">.</button>
+                <button class="btn number-btn" data-num="π">π</button>
+                <button class="btn equals-btn" id="equalsBtn">=</button>
+
+                <!-- Row 8: Control buttons -->
+                <button class="btn clear-btn" id="clearBtn">C</button>
+                <button class="btn backspace-btn" id="backspaceBtn">⌫</button>
+                <button class="btn paren-btn" data-paren="(">(</button>
+                <button class="btn paren-btn" data-paren=")">)</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
